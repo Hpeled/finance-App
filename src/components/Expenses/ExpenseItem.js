@@ -13,6 +13,7 @@ const ExpenseItem = (data) => {
 
 
     return (
+        <li>
 <Card className='expense-item'>
     <ExpenseDate date= {data.date}/>
     <div className='expense-item__description'>
@@ -22,6 +23,7 @@ const ExpenseItem = (data) => {
         </div>
         <button  onClick={clickheader}>Change Title</button>
     </Card>
+    </li>
     );
 
 };
